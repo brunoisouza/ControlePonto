@@ -33,6 +33,7 @@
             adicionarToolStripMenuItem = new ToolStripMenuItem();
             funcionáriosToolStripMenuItem = new ToolStripMenuItem();
             adicionarToolStripMenuItem1 = new ToolStripMenuItem();
+            btnApontamentos = new Button();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -55,7 +56,7 @@
             // adicionarToolStripMenuItem
             // 
             adicionarToolStripMenuItem.Name = "adicionarToolStripMenuItem";
-            adicionarToolStripMenuItem.Size = new Size(180, 22);
+            adicionarToolStripMenuItem.Size = new Size(125, 22);
             adicionarToolStripMenuItem.Text = "Adicionar";
             adicionarToolStripMenuItem.Click += adicionarToolStripMenuItem_Click;
             // 
@@ -69,15 +70,26 @@
             // adicionarToolStripMenuItem1
             // 
             adicionarToolStripMenuItem1.Name = "adicionarToolStripMenuItem1";
-            adicionarToolStripMenuItem1.Size = new Size(180, 22);
+            adicionarToolStripMenuItem1.Size = new Size(125, 22);
             adicionarToolStripMenuItem1.Text = "Adicionar";
             adicionarToolStripMenuItem1.Click += adicionarToolStripMenuItem1_Click;
+            // 
+            // btnApontamentos
+            // 
+            btnApontamentos.Location = new Point(12, 47);
+            btnApontamentos.Name = "btnApontamentos";
+            btnApontamentos.Size = new Size(125, 100);
+            btnApontamentos.TabIndex = 1;
+            btnApontamentos.Text = "Apontamento";
+            btnApontamentos.UseVisualStyleBackColor = true;
+            btnApontamentos.Click += btnApontamentos_Click;
             // 
             // MenuForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnApontamentos);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             Name = "MenuForm";
@@ -95,5 +107,6 @@
         private ToolStripMenuItem adicionarToolStripMenuItem;
         private ToolStripMenuItem funcionáriosToolStripMenuItem;
         private ToolStripMenuItem adicionarToolStripMenuItem1;
+        private Button btnApontamentos;
     }
 }

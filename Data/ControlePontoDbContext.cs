@@ -15,6 +15,8 @@ namespace ControlePonto.Data
         public DbSet<Cargo> Cargos {  get; set; }
         public DbSet<Funcionario> Funcionarios { get; set; }
 
+        public DbSet<Apontamento> Apontamentos { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             //Importa o arquivo de configuração Json

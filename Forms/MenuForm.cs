@@ -30,5 +30,12 @@ namespace ControlePonto.Forms
 
             formularioFuncionarioForm.Show();
         }
+
+        private void btnApontamentos_Click(object sender, EventArgs e)
+        {
+            FormularioApontamentoForm formularioApontamentoForm = new FormularioApontamentoForm();
+
+            formularioApontamentoForm.Show();
+        }
     }
 }
